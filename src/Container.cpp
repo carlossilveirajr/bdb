@@ -7,12 +7,19 @@
 
 #include "Container.h"
 
-Container::Container() {
-	// TODO Auto-generated constructor stub
+Container::Container(unsigned int size) : size(size) { }
 
+Container::~Container() { }
+
+void Container::add(Type key, Type info) {
+	if (data.size() >= size)
+		data.erase(data.begin());
+
+	data.push_back(std::pair<Type, Type> (key, info));
 }
 
-Container::~Container() {
-	// TODO Auto-generated destructor stub
+Type Container::get(Type key) {
+	for (auto i : data)
+		if (i.first == key)
+			return i.second;
 }
-
