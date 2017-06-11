@@ -14,8 +14,6 @@ class Type {
 public:
 	Type();
 	virtual ~Type();
-
-//	std::ostream& operator<<(std::ostream& os, const Type& obj);
 };
 
 bool operator==(const Type& a, const Type& b) {

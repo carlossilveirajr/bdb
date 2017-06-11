@@ -8,11 +8,13 @@
 #ifndef DATA_FLOAT_H_
 #define DATA_FLOAT_H_
 
-#include "../data/Type.h"
+#include <string>
+
+#include "Type.h"
 
 class Float: public Type {
 public:
-	Float();
+	Float(std::string value);
 	virtual ~Float();
 };
 

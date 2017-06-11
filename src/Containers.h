@@ -12,19 +12,21 @@
 #include <map>
 #include <functional>
 
-#include "Container.h"
+#include "ContainerConverter.h"
 
 class Containers {
 public:
 	Containers();
 	virtual ~Containers();
 
-	void create(std::string name, Container &container);
+	void create(std::string name, ContainerConverter &container);
 
-	Container& get(std::string name);
+	ContainerConverter& get(std::string name);
+
+	void deleteContainer(std::string name);
 
 private:
-	std::map<std::string, Container> allContainers;
+	std::map<std::string, ContainerConverter> allContainers;
 };
 
 #endif /* CONTAINERS_H_ */

@@ -11,10 +11,14 @@ Containers::Containers() { }
 
 Containers::~Containers() { }
 
-void Containers::create(std::string name, Container &container) {
+void Containers::create(std::string name, ContainerConverter &container) {
 	allContainers[name] = container;
 }
 
-Container& Containers::get(std::string name) {
+ContainerConverter& Containers::get(std::string name) {
 	return allContainers[name];
+}
+
+void Containers::deleteContainer(std::string name) {
+	allContainers.erase(name);
 }

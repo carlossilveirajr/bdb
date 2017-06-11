@@ -5,14 +5,9 @@
  *      Author: junior
  */
 
-#include "../data/Float.h"
+#include "Float.h"
 
-Float::Float() {
-	// TODO Auto-generated constructor stub
+Float::Float(std::string value) { }
 
-}
-
-Float::~Float() {
-	// TODO Auto-generated destructor stub
-}
+Float::~Float() { }
 
