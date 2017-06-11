@@ -5,14 +5,14 @@
  *      Author: junior
  */
 
-#ifndef CONTAINERS_H_
-#define CONTAINERS_H_
+#ifndef CONTAINER_CONTAINERS_H_
+#define CONTAINER_CONTAINERS_H_
 
 #include <string>
 #include <map>
 #include <functional>
 
-#include "ContainerConverter.h"
+#include "container/ContainerConverter.h"
 
 class Containers {
 public:
@@ -29,4 +29,4 @@ private:
 	std::map<std::string, ContainerConverter> allContainers;
 };
 
-#endif /* CONTAINERS_H_ */
+#endif /* CONTAINER_CONTAINERS_H_ */

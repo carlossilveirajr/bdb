@@ -5,8 +5,8 @@
  *      Author: junior
  */
 
-#ifndef CONTAINER_H_
-#define CONTAINER_H_
+#ifndef CONTAINER_CONTAINER_H_
+#define CONTAINER_CONTAINER_H_
 
 #include <vector>
 #include <utility>
@@ -26,4 +26,4 @@ private:
 	std::vector<std::pair<Type, Type> > data;
 };
 
-#endif /* CONTAINER_H_ */
+#endif /* CONTAINER_CONTAINER_H_ */
