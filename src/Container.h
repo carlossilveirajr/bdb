@@ -11,6 +11,8 @@
 #include <vector>
 #include <utility>
 
+#include "Type.h"
+
 class Container {
 public:
 	Container(unsigned int size);

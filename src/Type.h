@@ -15,7 +15,11 @@ public:
 	Type();
 	virtual ~Type();
 
-	std::ostream& operator<<(std::ostream& os, const Type& obj);
+//	std::ostream& operator<<(std::ostream& os, const Type& obj);
 };
+
+bool operator==(const Type& a, const Type& b) {
+    return true;
+}
 
 #endif /* TYPE_H_ */
