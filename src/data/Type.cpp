@@ -16,3 +16,12 @@ Type::~Type() {
 	// TODO Auto-generated destructor stub
 }
 
+void Type::print() {}
+
+bool Type::cmp(Type &t) {
+	return false;
+}
+
+std::string Type::get() {
+	return "";
+}

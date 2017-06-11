@@ -11,6 +11,7 @@
 #include <string>
 #include <map>
 #include <functional>
+#include <utility>
 
 #include "ContainerConverter.h"
 
@@ -19,7 +20,7 @@ public:
 	Containers();
 	virtual ~Containers();
 
-	void create(std::string name, ContainerConverter &container);
+	void create(std::string name, ContainerConverter container);
 
 	ContainerConverter& get(std::string name);
 

@@ -15,11 +15,11 @@
 
 class Container {
 public:
-	Container(unsigned int size);
+	Container(unsigned int size = 0);
 	virtual ~Container();
 
 	void add(Type key, Type info);
-	Type get(Type key);
+	bool get(Type key, Type &out);
 
 private:
 	unsigned int size;

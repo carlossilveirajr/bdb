@@ -14,10 +14,10 @@ class Type {
 public:
 	Type();
 	virtual ~Type();
-};
 
-bool operator==(const Type& a, const Type& b) {
-    return true;
-}
+	virtual bool cmp(Type &t);
+	virtual std::string get();
+	virtual void print();
+};
 
 #endif /* DATA_TYPE_H_ */

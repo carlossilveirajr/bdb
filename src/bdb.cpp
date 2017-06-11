@@ -24,7 +24,7 @@ int main() {
 
 	Containers all;
 
-	while (cin >> line && !strcmp(line, "QUIT")) {
+	while (cin >> line && strcmp(line, "QUIT")) {
 		token = strtok(line, " ");
 
 		if (!strcmp(token, "CREATE")) {
@@ -37,7 +37,11 @@ int main() {
 		}
 		else if (!strcmp(token, "GET")) {
 			token = strtok(NULL, " ");
-			cout << all.get(token).get(strtok(NULL, " "));
+			Type temp;
+			if (all.get(token).get(strtok(NULL, " "), temp))
+				temp.print();
+			else
+				cout << "Not Found" << endl;
 		}
 		else if (!strcmp(token, "DESTRUCT")) {
 			token = strtok(NULL, " ");
@@ -65,7 +69,7 @@ inline ContainerConverter& create() {
 
 	DataConvert con(k, v);
 	Container cont(atoi(s));
-	ContainerConverter c(cont, con);
+	ContainerConverter &c(cont, con);
 
 	return c;
 }

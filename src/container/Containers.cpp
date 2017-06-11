@@ -11,8 +11,8 @@ Containers::Containers() { }
 
 Containers::~Containers() { }
 
-void Containers::create(std::string name, ContainerConverter &container) {
-	allContainers[name] = container;
+void Containers::create(std::string name, ContainerConverter container) {
+	allContainers.insert(std::pair<std::string, ContainerConverter>(name, container));
 }
 
 ContainerConverter& Containers::get(std::string name) {

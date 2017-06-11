@@ -18,8 +18,12 @@ void Container::add(Type key, Type info) {
 	data.push_back(std::pair<Type, Type> (key, info));
 }
 
-Type Container::get(Type key) {
+bool Container::get(Type key, Type &out) {
 	for (auto i : data)
-		if (i.first == key)
-			return i.second;
+		if (i.first.cmp(key)) {
+			out = i.second;
+			return true;
+		}
+
+	return false;
 }

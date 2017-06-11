@@ -14,7 +14,7 @@
 
 class DataConvert {
 public:
-	DataConvert(std::string key, std::string data);
+	DataConvert(std::string key = "null", std::string data = "null");
 	virtual ~DataConvert();
 
 	Type convertKey(std::string value);

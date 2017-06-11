@@ -14,11 +14,12 @@
 
 class ContainerConverter {
 public:
+	ContainerConverter();
 	ContainerConverter(Container container, DataConvert converter);
 	virtual ~ContainerConverter();
 
 	void add(std::string key, std::string info);
-	Type get(std::string key);
+	bool get(std::string key, Type &out);
 
 private:
 	Container container;

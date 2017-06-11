@@ -20,7 +20,7 @@ Type DataConvert::convertData(std::string value) {
 	return convert(dataType, value);
 }
 
-Type convert(std::string type, std::string value) {
+Type DataConvert::convert(std::string type, std::string value) {
 	if (type == "float")
 		return Float(value);
 }
