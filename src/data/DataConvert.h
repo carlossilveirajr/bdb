@@ -5,12 +5,12 @@
  *      Author: junior
  */
 
-#ifndef DATACONVERT_H_
-#define DATACONVERT_H_
+#ifndef DATA_DATACONVERT_H_
+#define DATA_DATACONVERT_H_
 
 #include <string>
 
-#include "Float.h"
+#include "../data/Float.h"
 
 class DataConvert {
 public:
@@ -27,4 +27,4 @@ private:
 	Type convert(std::string type, std::string value);
 };
 
-#endif /* DATACONVERT_H_ */
+#endif /* DATA_DATACONVERT_H_ */

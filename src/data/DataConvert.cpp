@@ -5,7 +5,7 @@
  *      Author: junior
  */
 
-#include "DataConvert.h"
+#include "../data/DataConvert.h"
 
 DataConvert::DataConvert(std::string key, std::string data) :
 	keyType(key), dataType(data) { }

@@ -5,7 +5,7 @@
  *      Author: junior
  */
 
-#include "Type.h"
+#include "../data/Type.h"
 
 Type::Type() {
 	// TODO Auto-generated constructor stub

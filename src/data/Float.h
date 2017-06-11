@@ -5,10 +5,10 @@
  *      Author: junior
  */
 
-#ifndef FLOAT_H_
-#define FLOAT_H_
+#ifndef DATA_FLOAT_H_
+#define DATA_FLOAT_H_
 
-#include "Type.h"
+#include "../data/Type.h"
 
 class Float: public Type {
 public:
@@ -16,4 +16,4 @@ public:
 	virtual ~Float();
 };
 
-#endif /* FLOAT_H_ */
+#endif /* DATA_FLOAT_H_ */

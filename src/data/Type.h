@@ -5,8 +5,8 @@
  *      Author: junior
  */
 
-#ifndef TYPE_H_
-#define TYPE_H_
+#ifndef DATA_TYPE_H_
+#define DATA_TYPE_H_
 
 #include <string>
 
@@ -22,4 +22,4 @@ bool operator==(const Type& a, const Type& b) {
     return true;
 }
 
-#endif /* TYPE_H_ */
+#endif /* DATA_TYPE_H_ */
